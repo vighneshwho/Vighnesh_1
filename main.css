@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+
+    background-position: center;
+    background-size: cover;
 }
 
 :root{
@@ -185,7 +188,7 @@ h2{
     justify-content: center;
 
     height: 40px;
-    min-width: 200px;
+    width: 200px;
 
     border: 1px black solid;
 
@@ -247,10 +250,6 @@ h2{
     position: relative;
     background-color: var(--grey);
     height: 350px;
-
-
-    background-position: center;
-    background-size: cover;
 }
 
 .adventure-location{
@@ -448,25 +447,42 @@ h2{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-
-    background-color: red;
 }
 
-.contact-header{
-    background-color: yellow;
-}
 
 .contact-sub{
-    background-color: yellow;
     margin-top: 20px;
     color: var(--sub-text);
     font-size: 15px;
-    width: 70%;
+    width: 450px;
 }
 
 .contact-input{
+    margin-top: 30px;
     display: flex;
     align-items: stretch;
+}
+
+.contact-input > .button{
+    width: 150px;
+}
+
+.contact-input > input{
+    padding: 0 15px;
+    width: 200px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px black solid;
+
+    margin-right: 10px;
+    outline: none;
+}
+
+.contact-input > input::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--sub-text);
 }
 
 .contact-right{
