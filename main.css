@@ -21,6 +21,22 @@ svg{
     height: auto;
 }
 
+a{
+    text-decoration: none;
+    color: var(--sub-text);
+}
+
+a:link{
+    color: var(--sub-text);
+}
+
+a:visited{
+    color: var(--sub-text);
+}
+a:active{
+    color: var(--sub-text);
+}
+
 .container{
     margin: 0 30px;
 }
@@ -502,3 +518,28 @@ h2{
     background-color: black;
     background-image: url(./assets/contact.jpg);
 }
+
+.footer{
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copyright{
+    color: var(--sub-text);
+    font-size: 14px;
+}
+
+.footer-links > span{
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.footer-links a:hover{
+    color: var(--orange);
+}
+
+
