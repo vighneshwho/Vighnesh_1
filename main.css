@@ -192,7 +192,7 @@ h2{
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 300;
-    color: var(--sub-text);
+    color: black;
 
     cursor: pointer;
 
@@ -324,4 +324,165 @@ h2{
     justify-content: center;
 
     padding: 100px 0;
+}
+
+/* tips */
+
+.tips-header{
+    margin-left: -30px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    height: 270px;
+
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.tips-header-grey{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 37vw;
+
+    background-color: var(--grey);
+    z-index: -1;
+}
+
+.tips-list{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 9vw;
+
+    justify-content: center;
+}
+
+.tip{
+    display: flex;
+    align-items: flex-start;
+
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+
+
+.tip-number{
+    padding-top: 40px;
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 27px;
+    margin-right: 20px;
+
+}
+
+.tip-contents{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-top: 2px var(--orange) solid;
+    border-bottom: 2px var(--orange) solid;
+    padding-top: 40px;
+}
+
+.tip-tag{
+    margin-top: 5px;
+    background-color: var(--orange);
+
+    color: white;
+    height: 30px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.tip-title{
+
+    font-size: 27px;
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.tips-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 0;
+}
+
+.contact{
+    margin: 0 -30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    height: 500px;
+    background-color: var(--grey);
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    background-color: red;
+}
+
+.contact-header{
+    background-color: yellow;
+}
+
+.contact-sub{
+    background-color: yellow;
+    margin-top: 20px;
+    color: var(--sub-text);
+    font-size: 15px;
+    width: 70%;
+}
+
+.contact-input{
+    display: flex;
+    align-items: stretch;
+}
+
+.contact-right{
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-image-box{
+    background-color: var(--orange);
+    width: 80px;
+    height: 50%;
+}
+
+.contact-image{
+    align-self: stretch;
+    flex: 1;
+    background-color: black;
+    background-image: url(./assets/contact.jpg);
 }
