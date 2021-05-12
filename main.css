@@ -130,7 +130,7 @@ svg{
     margin-bottom: 170px;
 }
 
-.about-middle-text h2{
+h2{
     text-decoration: underline;
     font-size: 5vw;
     line-height: 7vw;
@@ -202,4 +202,126 @@ svg{
 .button:hover{
     background-color: black;
     color: white;
+}
+
+/* adventures */
+
+.adventures{
+    padding-top: 200px;
+    min-height: 100vh;
+}
+
+.adventures-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.adventures-list{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 6vw;
+
+    justify-content: center;
+}
+
+.adventures-list-item{
+    display: flex;
+    align-items: flex-start;
+
+    cursor: pointer;
+}
+
+.adventure-number{
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-right: 20px;
+
+}
+
+.adventure-image{
+    margin-top: 12px;
+    position: relative;
+    background-color: var(--grey);
+    height: 350px;
+
+
+    background-position: center;
+    background-size: cover;
+}
+
+.adventure-location{
+    background-color: var(--orange);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: white;
+    height: 40px;
+    /* min-width: 100px; */
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.adventure-title{
+    margin-top: 30px;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.adventure-sub{
+    margin-top: 20px;
+    color: var(--sub-text);
+    font-size: 14px;
+}
+
+.adventure-footer{
+    margin-top: 20px;
+    color: var(--orange);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 12px;
+    border-top: 0.5px #dfcbbd solid;
+    padding-top: 20px;
+}
+
+.separator{
+    margin: 0 5px;
+}
+
+.adventures-list-item:nth-child(1) .adventure-image{
+    background-image: url(./assets/thailand.jpg);
+}
+
+.adventures-list-item:nth-child(2) .adventure-image{
+    background-image: url(./assets/taiwan.jpg);
+}
+
+.adventures-list-item:nth-child(3) .adventure-image{
+    background-image: url(./assets/faroe-islands.jpg);
+}
+
+.adventures-list-item:nth-child(4) .adventure-image{
+    background-image: url(./assets/peru.jpg);
+}
+
+.adventures-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 0;
 }
