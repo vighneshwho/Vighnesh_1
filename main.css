@@ -51,7 +51,15 @@ a:active{
     display: flex;
     align-items: stretch;
 
-    /* margin-top: -100vh; */
+    margin-top: -100vh;
+    opacity: 0;
+
+    transition: margin 1s ease-out, opacity 1s ease-in-out;
+}
+
+.drawer-open{
+    margin-top: 0vh;
+    opacity: 1;
 }
 
 .drawer-left{
@@ -71,6 +79,57 @@ a:active{
 .drawer-left svg:hover{
     margin-bottom: 10px;
 }
+
+.drawer-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.drawer-menu-item{
+    margin: 20px 0;
+    font-size: 3vw;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: color 0.3s ease-out;
+}
+
+.active-menu-item{
+    color: var(--orange);
+}
+
+.drawer-menu-item:hover{
+    color: var(--orange);
+}
+
+.drawer-close{
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 0;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    fill: white;
+    cursor: pointer;
+}
+
+.drawer-close:hover{
+    background-color: black;
+}
+
 
 .landing{
     position: relative;
