@@ -41,6 +41,17 @@ a:active{
     margin: 0 30px;
 }
 
+.line-1{
+    height: 100vh;
+    width: 1px;
+    background-color: var(--grey);
+
+    position: fixed;
+    right: 30px;
+    z-index: -2;
+}
+
+
 .drawer{
     position: fixed;
     height: 100vh;
@@ -356,7 +367,7 @@ h2{
 .adventures-list{
     display: grid;
     grid-template-columns: 400px 400px;
-    gap: 6vw;
+    gap: 7vw;
 
     justify-content: center;
 }
@@ -372,7 +383,10 @@ h2{
     font-weight: 600;
     font-size: 40px;
     text-decoration: underline;
-    margin-right: 20px;
+    /* margin-right: 15px; */
+    margin-right: 1vw;
+
+   min-width: 50px;
 
 }
 
